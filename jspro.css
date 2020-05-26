@@ -1,0 +1,74 @@
+body,button,input{
+  font-family: 'Raleway', sans-serif;
+}
+.big{
+  width: 100%;
+  background-color: none;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.options{
+  display: flex;
+}
+.small{
+  width: 25%;
+  height: 100px;
+}
+.small:hover{
+  height: 120px;
+}
+#counter,#countdown{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: orange;
+  font-size: 80px;
+}
+#tipcalc{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: orange;
+}
+#todo{
+  text-align: center;
+}
+#addbtn{
+  background-color: #eee;
+}
+#addbtn:hover{
+  background-color: #ddd;
+  cursor: pointer;
+}
+#list{
+  font-size: 25px;
+  color: orange;
+  text-align: center;
+  cursor: pointer;
+}
+ul li {
+  list-style-type: none;
+  width: 80%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.close{
+  text-align: center;
+  width: 60px;
+  color: black;
+  float: right;
+}
+.close:hover{
+  background-color: red;
+}
+ul li.checked{
+  text-decoration: line-through;
+}

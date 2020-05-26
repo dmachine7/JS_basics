@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="jspro.css">
+    <title>JS projects</title>
+  </head>
+  <body>
+
+    <div class="big">PROJECT 1 <br> BG COLOR CHANGE </div>
+    <div class="options">
+      <div class="small" style="background-color:yellow" onclick="colorchange('yellow')"></div>
+      <div class="small" style="background-color:orange" onclick="colorchange('orange')"></div>
+      <div class="small" style="background-color:hotpink" onclick="colorchange('hotpink')"></div>
+      <div class="small" style="background-color:violet" onclick="colorchange('violet')"></div>
+    </div>
+
+    <div class="big">PROJECT 2 <br> COUNTER WITH LIMITS <br></div>
+    <div id="counter">
+      <button type="button" name="button" onclick="decrease()">-</button>
+      <p id="count">0</p>
+      <button type="button" name="button" onclick="increase()">+</button>
+    </div>
+
+    <div class="big">PROJECT 3 <br> COUNTDOWN </div>
+    <div id="countdown">
+      <button type="button" name="button" onclick="countdown()">Click to enter date</button>
+    </div>
+
+    <div class="big">PROJECT 4 <br> TIP CALCULATOR </div>
+    <div id="tipcalc">
+      <form>
+        <label for="amount">Enter amount : </label>
+        <input type="number" step="0.01" name="amount" id="amount"><br>
+        <label for="percent">Enter tip percentage : </label>
+        <input type="number" step="0.01" name="percent" id="percent"><br>
+        <button type="button" onclick="tipcalculator()">Calculate tip</button> <br>
+        <label for="tip">Tip is :  </label>
+        <input type="number" step="0.01" name="tip" id="tip"><br>
+        <label for="total">Total amount is : </label>
+        <input type="number" step="0.01" name="total" id="total"><br>
+      </form>
+    </div>
+
+    <div class="big">PROJECT 5 <br> TO DO APP </div>
+    <div id="todo">
+      <h3>MY TO DO LIST</h3><br>
+      <input type="text" id="mytask" placeholder="task...">
+      <span id="addbtn"onclick="addtask()">Add</span>
+    </div>
+    <div id="list">
+      <ul id="tasklist">
+        <li>tasks listed here</li>
+      </ul>
+    </div>
+
+    <script src="project.js"></script>
+  </body>
+</html>
